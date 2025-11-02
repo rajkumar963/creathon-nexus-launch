@@ -9,7 +9,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background"></div>
       </div>
 
       {/* Stats - Left Side */}

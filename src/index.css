@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 8%;
-    --foreground: 210 40% 98%;
+    --background: 230 40% 10%;
+    --foreground: 220 25% 95%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 230 35% 14%;
+    --card-foreground: 220 25% 95%;
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 230 35% 14%;
+    --popover-foreground: 220 25% 95%;
 
-    --primary: 190 95% 55%;
-    --primary-foreground: 220 25% 8%;
+    --primary: 275 70% 75%;
+    --primary-foreground: 230 40% 10%;
 
-    --secondary: 30 90% 60%;
-    --secondary-foreground: 220 25% 8%;
+    --secondary: 15 90% 72%;
+    --secondary-foreground: 230 40% 10%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 230 30% 25%;
+    --muted-foreground: 220 15% 70%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 25% 8%;
+    --accent: 260 75% 78%;
+    --accent-foreground: 230 40% 10%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 25% 95%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 18%;
-    --ring: 190 95% 55%;
+    --border: 230 30% 22%;
+    --input: 230 30% 20%;
+    --ring: 275 70% 75%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Futuristic gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(190, 95%, 55%), hsl(220, 90%, 60%));
-    --gradient-accent: linear-gradient(135deg, hsl(30, 90%, 60%), hsl(10, 85%, 55%));
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(190, 95%, 55% / 0.15), transparent 70%);
+    /* Twilight gradients inspired by the background */
+    --gradient-primary: linear-gradient(135deg, hsl(275, 70%, 75%), hsl(260, 75%, 78%));
+    --gradient-accent: linear-gradient(135deg, hsl(15, 90%, 72%), hsl(25, 85%, 68%));
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(275, 70%, 75% / 0.2), transparent 70%);
     
-    /* Glass effects */
-    --glass-bg: hsl(220, 20%, 15% / 0.6);
-    --glass-border: hsl(190, 95%, 55% / 0.2);
+    /* Glass effects - more visible on twilight background */
+    --glass-bg: hsl(230, 35%, 16% / 0.7);
+    --glass-border: hsl(275, 70%, 75% / 0.25);
     
-    /* Shadows and glows */
-    --glow-primary: 0 0 40px hsl(190, 95%, 55% / 0.3);
-    --glow-secondary: 0 0 40px hsl(30, 90%, 60% / 0.3);
-    --shadow-elevated: 0 20px 60px -10px hsl(220, 25%, 5% / 0.5);
+    /* Shadows and glows - softer, more ethereal */
+    --glow-primary: 0 0 50px hsl(275, 70%, 75% / 0.4);
+    --glow-secondary: 0 0 45px hsl(15, 90%, 72% / 0.35);
+    --shadow-elevated: 0 20px 60px -10px hsl(230, 40%, 5% / 0.6);
   }
 }
 
