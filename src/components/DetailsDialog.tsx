@@ -37,7 +37,7 @@ const DetailsDialog = ({ open, onOpenChange }: DetailsDialogProps) => {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md backdrop-blur-xl bg-card/95 border-[var(--glass-border)]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <DialogTitle className="font-display text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Get Event Details
           </DialogTitle>
           <DialogDescription className="text-muted-foreground">

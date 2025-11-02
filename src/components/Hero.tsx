@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-v2.jpg";
 
 const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
   return (
@@ -22,13 +22,13 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-md bg-[var(--glass-bg)] border border-[var(--glass-border)] animate-float">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-muted-foreground">
+          <span className="text-sm font-light text-muted-foreground tracking-wide">
             India Blockchain Week × Bitcoin MENA × Binance Blockchain Week
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+        <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
           <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
             AI × Web3
           </span>
@@ -37,11 +37,11 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
           India's biggest non-technical hackathon blending{" "}
-          <span className="text-primary font-semibold">creativity</span>,{" "}
-          <span className="text-primary font-semibold">artificial intelligence</span>, and{" "}
-          <span className="text-secondary font-semibold">blockchain technology</span>
+          <span className="text-primary font-medium">creativity</span>,{" "}
+          <span className="text-primary font-medium">artificial intelligence</span>, and{" "}
+          <span className="text-secondary font-medium">blockchain technology</span>
         </p>
 
         {/* CTA Buttons */}
@@ -49,7 +49,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
           <Button
             onClick={onGetDetails}
             size="lg"
-            className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-background font-semibold rounded-full px-8 shadow-[var(--glow-primary)] hover:shadow-[var(--glow-primary)] transition-all duration-300"
+            className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-background font-display font-semibold rounded-full px-8 shadow-[var(--glow-primary)] hover:shadow-[var(--glow-primary)] transition-all duration-300"
           >
             Register Now
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -59,7 +59,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
             onClick={onGetDetails}
             size="lg"
             variant="outline"
-            className="backdrop-blur-md bg-[var(--glass-bg)] border-[var(--glass-border)] hover:bg-[var(--glass-bg)] hover:border-primary/50 text-foreground font-semibold rounded-full px-8 transition-all duration-300"
+            className="backdrop-blur-md bg-[var(--glass-bg)] border-[var(--glass-border)] hover:bg-[var(--glass-bg)] hover:border-primary/50 text-foreground font-display font-semibold rounded-full px-8 transition-all duration-300"
           >
             Learn More
           </Button>
