@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg-v3.jpg";
 
 const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
@@ -10,67 +9,107 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/90"></div>
       </div>
 
-      {/* Glow Effects */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-glow-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: '1.5s' }}></div>
+      {/* Stats - Left Side */}
+      <div className="absolute left-8 lg:left-16 top-1/2 -translate-y-1/2 space-y-12 hidden lg:block animate-fade-in">
+        <div className="text-left">
+          <div className="font-display text-5xl font-bold text-foreground mb-2">500+</div>
+          <div className="text-sm text-muted-foreground max-w-[140px]">
+            participants from across India
+          </div>
+        </div>
+        
+        <div className="text-left">
+          <div className="font-display text-5xl font-bold text-foreground mb-2">₹10L+</div>
+          <div className="text-sm text-muted-foreground max-w-[140px]">
+            in prizes and opportunities
+          </div>
+        </div>
+        
+        <div className="text-left">
+          <div className="font-display text-5xl font-bold text-foreground mb-2">48hrs</div>
+          <div className="text-sm text-muted-foreground max-w-[140px]">
+            of intensive creativity
+          </div>
+        </div>
+      </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8 animate-fade-in">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-md bg-[var(--glass-bg)] border border-[var(--glass-border)] animate-float">
-          <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-light text-muted-foreground tracking-wide">
-            India Blockchain Week × Bitcoin MENA × Binance Blockchain Week
-          </span>
+      {/* Testimonial Card - Right Side */}
+      <div className="absolute right-8 lg:right-16 top-1/2 -translate-y-1/2 hidden lg:block animate-fade-in">
+        <div className="backdrop-blur-md bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-6 max-w-[320px]">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex -space-x-3">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background"></div>
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-secondary border-2 border-background"></div>
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-primary border-2 border-background"></div>
+            </div>
+          </div>
+          <div className="text-sm font-semibold text-foreground mb-1">Previous Winners</div>
+          <div className="text-xs text-muted-foreground mb-3">BUILDERS & CREATORS</div>
+          <p className="text-sm text-foreground/90 leading-relaxed">
+            "This creathon helped us bridge creativity with cutting-edge technology. The perfect launchpad for our AI-powered blockchain project."
+          </p>
+          <div className="flex gap-1 mt-4">
+            <div className="w-2 h-2 rounded-full bg-primary"></div>
+            <div className="w-2 h-2 rounded-full bg-primary/30"></div>
+            <div className="w-2 h-2 rounded-full bg-primary/30"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Center Content */}
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6 animate-fade-in">
+        {/* Eyebrow */}
+        <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-light">
+          The Future of Innovation
         </div>
 
         {/* Main Heading */}
-        <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-          <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
-            AI × Web3
+        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+          Where creativity meets{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
+            technology
           </span>
-          <br />
-          <span className="text-foreground">Creathon</span>
         </h1>
 
         {/* Subheading */}
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-          India's biggest non-technical hackathon blending{" "}
-          <span className="text-primary font-medium">creativity</span>,{" "}
-          <span className="text-primary font-medium">artificial intelligence</span>, and{" "}
-          <span className="text-secondary font-medium">blockchain technology</span>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
+          A space built for creators who want to push boundaries. Pause, ideate, and build the future with AI and Web3.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
           <Button
             onClick={onGetDetails}
             size="lg"
-            className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-background font-display font-semibold rounded-full px-8 shadow-[var(--glow-primary)] hover:shadow-[var(--glow-primary)] transition-all duration-300"
+            className="bg-foreground hover:bg-foreground/90 text-background font-display font-semibold rounded-full px-10 transition-all duration-300"
           >
             Register Now
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           
           <Button
             onClick={onGetDetails}
             size="lg"
             variant="outline"
-            className="backdrop-blur-md bg-[var(--glass-bg)] border-[var(--glass-border)] hover:bg-[var(--glass-bg)] hover:border-primary/50 text-foreground font-display font-semibold rounded-full px-8 transition-all duration-300"
+            className="backdrop-blur-md bg-transparent border-foreground/20 hover:bg-foreground/10 hover:border-foreground/40 text-foreground font-display font-semibold rounded-full px-10 transition-all duration-300"
           >
-            Learn More
+            See How It Works
           </Button>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-primary/50 flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-glow-pulse"></div>
-          </div>
-        </div>
+        {/* Small Text */}
+        <p className="text-xs text-muted-foreground pt-2">
+          Takes less than 2 minutes. No prior experience needed.
+        </p>
+      </div>
+
+      {/* Footer Text */}
+      <div className="absolute bottom-8 left-0 right-0 flex items-center justify-between px-8 lg:px-16 text-xs text-muted-foreground">
+        <div>AI × Web3 Creathon 2025 — Innovation for Creators</div>
+        <div className="hidden md:block">Created for the future of blockchain and AI</div>
+        <div className="hidden lg:block">Scroll to explore</div>
       </div>
     </section>
   );
