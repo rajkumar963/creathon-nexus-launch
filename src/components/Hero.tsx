@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroBg from "@/assets/hero-bg-v2.jpg";
+import heroBg from "@/assets/hero-bg-v3.jpg";
 
 const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
   return (
