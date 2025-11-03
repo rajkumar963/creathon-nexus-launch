@@ -63,7 +63,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6 animate-fade-in">
         {/* Eyebrow */}
         <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-light">
-          One of India's Biggest Non-Technical Hackathons
+          One of the Biggest Non-Technical Hackathons
         </div>
 
         {/* Main Heading */}
@@ -76,7 +76,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
-          Where innovation meets opportunity. No coding experience needed—just bring your creativity and passion to shape breakthrough ideas in AI and blockchain technology.
+          Join India's biggest non-technical hackathon blending creativity, AI, and blockchain. Hosted around India Blockchain Week, Bitcoin MENA, and Binance Blockchain Week.
         </p>
 
         {/* CTA Buttons */}
