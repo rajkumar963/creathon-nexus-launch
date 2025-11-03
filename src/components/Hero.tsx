@@ -29,9 +29,9 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
         </div>
         
         <div className="text-left">
-          <div className="font-display text-5xl font-bold text-foreground mb-2">100+</div>
+          <div className="font-display text-5xl font-bold text-foreground mb-2">2 Weeks</div>
           <div className="text-sm text-muted-foreground max-w-[140px]">
-            mentor sessions & workshops
+            of innovation & collaboration
           </div>
         </div>
       </div>
@@ -46,10 +46,10 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-primary border-2 border-background"></div>
             </div>
           </div>
-          <div className="text-sm font-semibold text-foreground mb-1">Previous Winners</div>
-          <div className="text-xs text-muted-foreground mb-3">BUILDERS & CREATORS</div>
+          <div className="text-sm font-semibold text-foreground mb-1">What to Expect</div>
+          <div className="text-xs text-muted-foreground mb-3">IMMERSIVE EXPERIENCE</div>
           <p className="text-sm text-foreground/90 leading-relaxed">
-            "This creathon helped us bridge creativity with cutting-edge technology. The perfect launchpad for our AI-powered blockchain project."
+            Connect with industry leaders, collaborate with diverse teams, and access cutting-edge tools. Transform your vision into reality with mentorship and resources.
           </p>
           <div className="flex gap-1 mt-4">
             <div className="w-2 h-2 rounded-full bg-primary"></div>
@@ -63,7 +63,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6 animate-fade-in">
         {/* Eyebrow */}
         <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-light">
-          India's Premier Non-Technical Hackathon
+          One of India's Biggest Non-Technical Hackathons
         </div>
 
         {/* Main Heading */}
@@ -76,7 +76,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
-          No coding required. Join creators, designers, and innovators in a 48-hour journey to transform ideas into breakthrough solutions powered by blockchain and AI.
+          Where innovation meets opportunity. No coding experience needed—just bring your creativity and passion to shape breakthrough ideas in AI and blockchain technology.
         </p>
 
         {/* CTA Buttons */}
