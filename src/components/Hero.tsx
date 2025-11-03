@@ -15,29 +15,29 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
       {/* Stats - Left Side */}
       <div className="absolute left-8 lg:left-16 top-1/2 -translate-y-1/2 space-y-12 hidden lg:block animate-fade-in">
         <div className="text-left">
-          <div className="font-display text-5xl font-bold text-foreground mb-2">500+</div>
+          <div className="font-display text-5xl font-bold text-foreground mb-2">50,000+</div>
           <div className="text-sm text-muted-foreground max-w-[140px]">
-            participants from across India
+            impressions across platforms
           </div>
         </div>
         
         <div className="text-left">
-          <div className="font-display text-5xl font-bold text-foreground mb-2">₹10L+</div>
+          <div className="font-display text-5xl font-bold text-foreground mb-2">$10K+</div>
           <div className="text-sm text-muted-foreground max-w-[140px]">
-            in prizes and opportunities
+            in prize money & perks
           </div>
         </div>
         
         <div className="text-left">
-          <div className="font-display text-5xl font-bold text-foreground mb-2">48hrs</div>
+          <div className="font-display text-5xl font-bold text-foreground mb-2">100+</div>
           <div className="text-sm text-muted-foreground max-w-[140px]">
-            of intensive creativity
+            mentor sessions & workshops
           </div>
         </div>
       </div>
 
       {/* Testimonial Card - Right Side */}
-      <div className="absolute right-8 lg:right-16 top-1/2 -translate-y-1/2 hidden lg:block animate-fade-in">
+      <div className="absolute right-8 lg:right-16 top-[58%] -translate-y-1/2 hidden lg:block animate-fade-in">
         <div className="backdrop-blur-md bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-2xl p-6 max-w-[320px]">
           <div className="flex items-center gap-3 mb-4">
             <div className="flex -space-x-3">
@@ -63,20 +63,20 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6 animate-fade-in">
         {/* Eyebrow */}
         <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground font-light">
-          The Future of Innovation
+          India's Premier Non-Technical Hackathon
         </div>
 
         {/* Main Heading */}
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
-          Where creativity meets{" "}
+          Build the future with{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-            technology
+            AI & Web3
           </span>
         </h1>
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
-          A space built for creators who want to push boundaries. Pause, ideate, and build the future with AI and Web3.
+          No coding required. Join creators, designers, and innovators in a 48-hour journey to transform ideas into breakthrough solutions powered by blockchain and AI.
         </p>
 
         {/* CTA Buttons */}
@@ -101,7 +101,7 @@ const Hero = ({ onGetDetails }: { onGetDetails: () => void }) => {
 
         {/* Small Text */}
         <p className="text-xs text-muted-foreground pt-2">
-          Takes less than 2 minutes. No prior experience needed.
+          Registration closes soon. Open to all skill levels—creativity is your only requirement.
         </p>
       </div>
 
